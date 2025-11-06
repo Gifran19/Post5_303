@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="6dp">
+
+    <!-- Foto story dengan border (story_ring) -->
+    <ImageView
+        android:id="@+id/iv_story"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/story_ring"
+        android:src="@drawable/ic_person"
+        android:contentDescription="Foto story" />
+
+    <!-- Username di bawah avatar -->
+    <TextView
+        android:id="@+id/tv_story_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="username"
+        android:textColor="#000"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>
